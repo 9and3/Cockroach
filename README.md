@@ -28,6 +28,10 @@ Cockroach_RadiusOutlierRemoval : to filter noise (outlier points) from point clo
 Cockroach_RemoveStatisticalOutliers : to filter noise (outlier points) from point clouds by KdTree search;
 
 
+**Next release**
+
+Cockroach is for now just a Rhino plug-in. We are planning to make a GH plug-in and release the full source code in a near future.
+
 **Citation**
 
 @misc{IBOIS2020,
