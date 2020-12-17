@@ -1,17 +1,15 @@
 **Cockroach**
- 
-<p align="center">
+ <p align="center">
   <img width="400" height="410" src="https://github.com/9and3/Cockroach/blob/Cockroach/Cockroach_logo.png">
 </p>
-
-Introduction
+**Introduction**
 
 Cockroach is a plug-in developed to introduce various commands for point cloud post-processing and meshing into Rhinoceros® environment based on reference functions already existing in the open source library Open3D [1]. Its focus is on fast and easy-to-use geometric manipulation, characterization and decomposition of point clouds directly from Rhinoceros®. We would like to thank Dale Fugier (McNeel) for his precious help in implementing these commands into C++ RhinoCommon.
 
 [1] Zhou, Park, and Koltun, Open3D: A Modern Library for 3D Data Processing.
 
 
-Core Features
+**Core Features**
 
 The first release includes 13 Rhino commands: 
 
@@ -30,7 +28,7 @@ Cockroach_RadiusOutlierRemoval : to filter noise (outlier points) from point clo
 Cockroach_RemoveStatisticalOutliers : to filter noise (outlier points) from point clouds by KdTree search;
 
 
-Citation
+**Citation**
 
 @misc{IBOIS2020,
    author  = {Petras Vestartas and Andrea Settimi},
@@ -40,6 +38,6 @@ Citation
    year    = {2020},
 }
 
-License
+**License**
 
 Cockroach is released under the MIT license. If you use Cockroach in published work, please cite also the third-party libraries we used: Open3D.
