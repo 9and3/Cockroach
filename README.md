@@ -3,6 +3,7 @@
   <img width="400" height="410" src="https://github.com/9and3/Cockroach/blob/Cockroach/Cockroach_logo.png">
 </p>
 
+
 Cockroach is a plug-in developed to introduce various commands for point cloud post-processing and meshing into Rhinoceros® environment based on reference functions already existing in the open source library Open3D [1]. Its focus is on fast and easy-to-use geometric manipulation, characterization and decomposition of point clouds directly from Rhinoceros®. We would like to thank Dale Fugier (McNeel) for his precious help in implementing these commands into C++ RhinoCommon.
 
 [1] Zhou, Park, and Koltun, Open3D: A Modern Library for 3D Data Processing.
