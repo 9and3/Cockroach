@@ -1,4 +1,4 @@
-Cockroach 
+**Cockroach**
  
 <p align="center">
   <img width="400" height="410" src="https://github.com/9and3/Cockroach/blob/Cockroach/Cockroach_logo.png">
