@@ -33,9 +33,8 @@ Cockroach_RemoveStatisticalOutliers : to filter noise (outlier points) from poin
 @misc{IBOIS2020,
    author  = {Petras Vestartas and Andrea Settimi},
    title   = {{Cockroach}: {A} plug-in for point cloud post-processing and meshing in {Rhino} environment},
-   journal = { },
-   note  = {EPFL ENAC ICC IBOIS},
-   year    = {2020},
+   journal = {EPFL ENAC ICC IBOIS},
+   year    = {2020}
 }
 
 **License**
