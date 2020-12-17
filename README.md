@@ -8,6 +8,9 @@ Cockroach is a plug-in developed to introduce various commands for point cloud p
 
 [1] Zhou, Park, and Koltun, Open3D: A Modern Library for 3D Data Processing.
 
+**Dependecies**
+
+You will need download the Open3D.dll and place it in the same plug-in folder.
 
 **Core Features**
 
