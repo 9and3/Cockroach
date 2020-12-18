@@ -32,29 +32,29 @@ The first release includes 13 Rhino commands:
 
 *Cockroach_BallPivoting* : a mesh reconstruction algorithm to reconstruct a triangulated mesh from a point cloud;
 
-Cockroach_Poisson : a mesh reconstruction algorithm to obtain water-tight smoothed meshes from point clouds;
+*Cockroach_Poisson* : a mesh reconstruction algorithm to obtain water-tight smoothed meshes from point clouds;
 
-Cockroach_Crop : to crop a point cloud with a box;
+*Cockroach_Crop* : to crop a point cloud with a box;
 
-Cockroach_DBSCANclustering : a density-based clustering method to obtain separate point clouds from a bigger one;
+*Cockroach_DBSCANclustering* : a density-based clustering method to obtain separate point clouds from a bigger one;
 
-Cockroach_Downsample : reduce the size of a point cloud by a number threshold of points;
+*Cockroach_Downsample* : reduce the size of a point cloud by a number threshold of points;
 
-Cockroach_VoxelDownsample : reduce the number of point clouds by voxelization;
+*Cockroach_VoxelDownsample* : reduce the number of point clouds by voxelization;
 
-Cockroach_MeshSmooth : to uniformly smooth a mesh;
+*Cockroach_MeshSmooth* : to uniformly smooth a mesh;
 
-Cockroach_PlaneSegmentation : removal of point cloud planes by RANSAC;
+*Cockroach_PlaneSegmentation* : removal of point cloud planes by RANSAC;
 
-Cockroach_PointCloudNormals : to estimate and correctly orient normal even for unstructured point clouds;
+*Cockroach_PointCloudNormals* : to estimate and correctly orient normal even for unstructured point clouds;
 
-Cockroach_PopulatePoints : to obtain a randomly populated point cloud from a mesh;
+*Cockroach_PopulatePoints* : to obtain a randomly populated point cloud from a mesh;
 
-Cockroach_PopulatePointsUniform : to obtain an uniformly populated point cloud from a mesh;
+*Cockroach_PopulatePointsUniform* : to obtain an uniformly populated point cloud from a mesh;
 
-Cockroach_RadiusOutlierRemoval : to filter noise (outlier points) from point clouds by distance radius;
+*Cockroach_RadiusOutlierRemoval* : to filter noise (outlier points) from point clouds by distance radius;
 
-Cockroach_RemoveStatisticalOutliers : to filter noise (outlier points) from point clouds by KdTree search;
+*Cockroach_RemoveStatisticalOutliers* : to filter noise (outlier points) from point clouds by KdTree search;
 
 **Citation**
 
