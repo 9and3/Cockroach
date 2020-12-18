@@ -4,13 +4,29 @@
 </p>
 
 
-Cockroach is a plug-in developed to introduce various commands for point cloud post-processing and meshing into Rhinoceros® environment based on reference functions already existing in the open source library Open3D [1]. Its focus is on fast and easy-to-use geometric manipulation, characterization and decomposition of point clouds directly from Rhinoceros®. We would like to thank Dale Fugier (McNeel) for his precious help in implementing these commands into C++ RhinoCommon.
+Cockroach is a plug-in developed to introduce various commands for point cloud post-processing and meshing into Rhinoceros® environment based on reference functions already existing in the open source library Open3D [1]. 
+
+The pointcloud processing tools focus on:
+1. fast and easy-to-use geometric manipulation, characterization and decomposition of point clouds directly in Rhinoceros6 and 7®. 
+2. the better link between CAD modelling software (Rhino) and point-cloud processing.
+3. integration of point-cloud processing with other frameworks such as easy-to-use .NET programming languages (C#, IronPython, VB) using the interface of Grasshopper, Rhino.
+4. unified (as much as possible) approach across multiple backends to help researchers collaborate within academic or industrial partners. For example, a researcher in point-cloud processing develops a method to scan objects and another researcher translates point-cloud data to CAD model. At IBOIS, EPFL, we scan raw-wood and rocks. Then the scan models are represented as low-poly meshes or NURBS for design i.e. 3D timber joinery representation and fabrication tool-paths for 5-axis CNC and ABBIRB6400 Robot.
+
+We would like to thank Dale Fugier (McNeel) for his help during C++ plugin development into Rhinoceros®.
 
 [1] Zhou, Park, and Koltun, Open3D: A Modern Library for 3D Data Processing.
 
 **Dependecies**
 
 You will need download the Open3D.dll and place it in the same plug-in folder.
+There are two ways to get Open3D.dll
+
+1. Download Cockroach from www.food4rhino.com/
+2. Compile Open3D as a Dynamic Library from:
+Open3D repository: https://github.com/intel-isl/Open3D/blob/master/README.md
+Instructions (C++): https://github.com/intel-isl/Open3D/issues/2717
+
+
 
 **Core Features**
 
@@ -30,20 +46,33 @@ Cockroach_PopulatePointsUniform : to obtain an uniformly populated point cloud f
 Cockroach_RadiusOutlierRemoval : to filter noise (outlier points) from point clouds by distance radius;
 Cockroach_RemoveStatisticalOutliers : to filter noise (outlier points) from point clouds by KdTree search;
 
-
-**Next release**
-
-Cockroach is for now just a Rhino plug-in. We are planning to make a GH plug-in and release the full source code in a near future.
-
 **Citation**
+
+Please use this citation if you use Cockroach in published work. In addition, please cite also the third-party libraries we used: Open3D (https://github.com/intel-isl/Open3D/blob/master/README.md).
 
 @misc{IBOIS2020,
    author  = {Petras Vestartas and Andrea Settimi},
    title   = {{Cockroach}: {A} plug-in for point cloud post-processing and meshing in {Rhino} environment},
    journal = {EPFL ENAC ICC IBOIS},
+   url = {https://github.com/9and3/Cockroach},
    year    = {2020}
 }
 
 **License**
 
 Cockroach is released under the MIT license. If you use Cockroach in published work, please cite also the third-party libraries we used: Open3D.
+The code is not yet fully open as there are still developments in progress but will be soon. Nevertheless, the code can be made available upon request. We encourage use for both research and commercial purposes, as long as proper attribution is given. Feel free to also send us an email and let us know how Cockroach has been useful to you and how it can be improved. 
+
+**Contact**
+For code request or chat i.e. open github issue or contact us by email.
+Some data, models or generated code using our research are available from the corresponding authors by reques:
+Petras Vestartas, petrasvestartas@gmail.com
+Andrea Settimi, andrea.settimi@epfl.ch
+
+
+**Next release**
+
+Cockroach is currently a Rhino plug-in. 
+We are planning to make a GH plug-in and release the full source code in a near future.
+
+
