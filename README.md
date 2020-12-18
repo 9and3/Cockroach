@@ -10,7 +10,7 @@ The pointcloud processing tools focus on:
 1. fast and easy-to-use geometric manipulation, characterization and decomposition of point clouds directly in Rhinoceros6 and 7®. 
 2. the better link between CAD modelling software (Rhino) and point-cloud processing.
 3. integration of point-cloud processing with other frameworks such as easy-to-use .NET programming languages (C#, IronPython, VB) using the interface of Grasshopper, Rhino.
-4. unified (as much as possible) approach across multiple backends to help researchers collaborate within academic or industrial partners. For example, a researcher in point-cloud processing develops a method to scan objects and another researcher translates point-cloud data to CAD model. At IBOIS, EPFL, we scan raw-wood and rocks. Then the scan models are represented as low-poly meshes or NURBS for design i.e. 3D timber joinery representation and fabrication tool-paths for 5-axis CNC and ABBIRB6400 Robot.
+4. unified (as much as possible) approach across multiple backends to help researchers collaborate within academic or industrial partners. At IBOIS - EPFL, among other research lines, we have also being focusing on structures with unpredictable geometries such as raw wood and mineral scraps. These construction elements are scanned and post-processed into low-poly meshes or NURBS for design i.e. 3D timber joinery representation and fabrication tool-paths for 5-axis CNC, ABBIRB6400 Robot and XR manufacture.
 
 We would like to thank Dale Fugier (McNeel) for his help during C++ plugin development into Rhinoceros®.
 
@@ -26,13 +26,11 @@ There are two ways to get Open3D.dll
 Open3D repository: https://github.com/intel-isl/Open3D/blob/master/README.md
 Instructions (C++): https://github.com/intel-isl/Open3D/issues/2717
 
-
-
 **Core Features**
 
 The first release includes 13 Rhino commands: 
 
-Cockroach_BallPivoting : a mesh reconstruction algorithm to reconstruct a triangulated mesh from a point cloud;
+*Cockroach_BallPivoting* : a mesh reconstruction algorithm to reconstruct a triangulated mesh from a point cloud;
 
 Cockroach_Poisson : a mesh reconstruction algorithm to obtain water-tight smoothed meshes from point clouds;
 
@@ -76,11 +74,11 @@ Cockroach is released under the MIT license. If you use Cockroach in published w
 The code is not yet fully open as there are still developments in progress but will be soon. Nevertheless, the code can be made available upon request. We encourage use for both research and commercial purposes, as long as proper attribution is given. Feel free to also send us an email and let us know how Cockroach has been useful to you and how it can be improved. 
 
 **Contact**
+
 For code request or chat i.e. open github issue or contact us by email.
-Some data, models or generated code using our research are available from the corresponding authors by reques:
+Some data, models or generated code using our research are available from the corresponding authors by request:
 Petras Vestartas, petrasvestartas@gmail.com
 Andrea Settimi, andrea.settimi@epfl.ch
-
 
 **Next release**
 
