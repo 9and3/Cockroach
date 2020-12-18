@@ -16,6 +16,7 @@ We would like to thank Dale Fugier (McNeel) for his help during C++ plugin devel
 
 [1] Zhou, Park, and Koltun, Open3D: A Modern Library for 3D Data Processing.
 
+
 **Dependecies**
 
 You will need download the Open3D.dll and place it in the same plug-in folder.
@@ -25,6 +26,7 @@ There are two ways to get Open3D.dll
 2. Compile Open3D as a Dynamic Library from:
 Open3D repository: https://github.com/intel-isl/Open3D/blob/master/README.md
 Instructions (C++): https://github.com/intel-isl/Open3D/issues/2717
+
 
 **Core Features**
 
@@ -56,6 +58,7 @@ The first release includes 13 Rhino commands:
 
 *Cockroach_RemoveStatisticalOutliers* : to filter noise (outlier points) from point clouds by KdTree search;
 
+
 **Citation**
 
 Please use this citation if you use Cockroach in published work. In addition, please cite also the third-party libraries we used: Open3D (https://github.com/intel-isl/Open3D/blob/master/README.md).
@@ -68,10 +71,12 @@ Please use this citation if you use Cockroach in published work. In addition, pl
    year    = {2020}
 }
 
+
 **License**
 
 Cockroach is released under the MIT license. If you use Cockroach in published work, please cite also the third-party libraries we used: Open3D.
 The code is not yet fully open as there are still developments in progress but will be soon. Nevertheless, the code can be made available upon request. We encourage use for both research and commercial purposes, as long as proper attribution is given. Feel free to also send us an email and let us know how Cockroach has been useful to you and how it can be improved. 
+
 
 **Contact**
 
@@ -79,6 +84,7 @@ For code request or chat i.e. open github issue or contact us by email.
 Some data, models or generated code using our research are available from the corresponding authors by request:
 Petras Vestartas, petrasvestartas@gmail.com
 Andrea Settimi, andrea.settimi@epfl.ch
+
 
 **Next release**
 
