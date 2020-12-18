@@ -60,6 +60,8 @@ The first release includes 13 Rhino commands:
 
 Please use this citation if you use Cockroach in published work. In addition, please cite also the third-party libraries we used: Open3D (https://github.com/intel-isl/Open3D/blob/master/README.md).
 
+Bibitex citation:
+
 @misc{IBOIS2020,
    author  = {Petras Vestartas and Andrea Settimi},
    title   = {{Cockroach}: {A} plug-in for point cloud post-processing and meshing in {Rhino} environment},
@@ -67,6 +69,11 @@ Please use this citation if you use Cockroach in published work. In addition, pl
    url = {https://github.com/9and3/Cockroach},
    year    = {2020}
 }
+
+Citation (no Bibitex):
+
+Petras Vestartas and Andrea Settimi, Cockroach: A Plug-in for Point Cloud Post-Processing and Meshing in Rhino Environment, EPFL ENAC ICC IBOIS, 2020, https://github.com/9and3/Cockroach.
+
 
 **License**
 
