@@ -24,7 +24,7 @@ There are two ways to get Open3D.dll
 1. Download Cockroach from www.food4rhino.com/
 2. Compile Open3D as a Dynamic Library from:
 Open3D repository: https://github.com/intel-isl/Open3D/blob/master/README.md
-Instructions (C++): https://github.com/intel-isl/Open3D/issues/2717
+
 
 **Core Features**
 
