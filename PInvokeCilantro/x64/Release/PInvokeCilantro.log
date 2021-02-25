@@ -1,0 +1,538 @@
+﻿  pch.cpp
+  baseCilantroCluster.cpp
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(69,27): warning C4018: '<': signed/unsigned mismatch
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(152,27): warning C4018: '<': signed/unsigned mismatch
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(247,27): warning C4018: '<': signed/unsigned mismatch
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(330,27): warning C4018: '<': signed/unsigned mismatch
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(422,27): warning C4018: '<': signed/unsigned mismatch
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(515,27): warning C4018: '<': signed/unsigned mismatch
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(595,49): warning C4305: 'argument': truncation from 'double' to 'ScalarT'
+          with
+          [
+              ScalarT=float
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(608,27): warning C4018: '<': signed/unsigned mismatch
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(698,27): warning C4018: '<': signed/unsigned mismatch
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(808,70): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(808,56): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(808,42): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(809,70): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(809,56): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(809,42): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(810,70): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(810,56): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(810,42): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(868,73): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(894,44): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(898,58): warning C4244: '+=': conversion from 'Eigen::Index' to 'int', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(899,59): warning C4244: '+=': conversion from 'Eigen::Index' to 'int', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(900,58): warning C4244: '+=': conversion from 'Eigen::Index' to 'int', possible loss of data
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(902,58): warning C4244: '=': conversion from 'Eigen::Index' to 'int', possible loss of data
+C:\Program Files\cilantro\include\cilantro\clustering\kmeans.hpp(46,2): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\clustering\kmeans.hpp(38): message : while compiling class template member function 'cilantro::KMeans<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t> &cilantro::KMeans<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t>::cluster(size_t,size_t,ScalarT,bool)'
+          with
+          [
+              ScalarT=float
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(502): message : see reference to function template instantiation 'cilantro::KMeans<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t> &cilantro::KMeans<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t>::cluster(size_t,size_t,ScalarT,bool)' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(499): message : see reference to class template instantiation 'cilantro::KMeans<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t>' being compiled
+C:\Program Files\cilantro\include\cilantro\core\kd_tree.hpp(149,37): warning C4244: 'argument': conversion from 'Eigen::Index' to 'const int', possible loss of data
+C:\Program Files\cilantro\include\cilantro\core\kd_tree.hpp(146): message : while compiling class template member function 'cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT>::KDTree(const cilantro::ConstDataMatrixMap<ScalarT,3> &,size_t)'
+          with
+          [
+              ScalarT=float,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointIndexT=size_t
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(405): message : see reference to function template instantiation 'cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT>::KDTree(const cilantro::ConstDataMatrixMap<ScalarT,3> &,size_t)' being compiled
+          with
+          [
+              ScalarT=float,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointIndexT=size_t
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(55): message : see reference to class template instantiation 'cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT>' being compiled
+          with
+          [
+              ScalarT=float,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointIndexT=size_t
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(397,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Program Files\cilantro\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(389): message : while compiling class template member function 'float nanoflann::L2_Adaptor<ScalarT,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,ScalarT>::evalMetric(const T *,const size_t,size_t,float) const'
+          with
+          [
+              ScalarT=float,
+              T=float
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\kmeans.hpp(109): message : see reference to function template instantiation 'float nanoflann::L2_Adaptor<ScalarT,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,ScalarT>::evalMetric(const T *,const size_t,size_t,float) const' being compiled
+          with
+          [
+              ScalarT=float,
+              T=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(756): message : see reference to class template instantiation 'nanoflann::L2_Adaptor<ScalarT,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,ScalarT>' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(1125): message : see reference to class template instantiation 'nanoflann::KDTreeBaseClass<nanoflann::KDTreeSingleIndexAdaptor<nanoflann::L2_Adaptor<ScalarT,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,ScalarT>,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,3,IndexT>,Distance,DatasetAdaptor,3,IndexType>' being compiled
+          with
+          [
+              ScalarT=float,
+              IndexT=size_t,
+              Distance=nanoflann::L2_Adaptor<float,cilantro::KDTreeDataAdaptors::EigenMap<float,3>,float>,
+              DatasetAdaptor=cilantro::KDTreeDataAdaptors::EigenMap<float,3>,
+              IndexType=size_t
+          ]
+C:\Program Files\cilantro\include\cilantro\core\kd_tree.hpp(400): message : see reference to class template instantiation 'nanoflann::KDTreeSingleIndexAdaptor<nanoflann::L2_Adaptor<ScalarT,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,ScalarT>,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,3,IndexT>' being compiled
+          with
+          [
+              ScalarT=float,
+              IndexT=size_t
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(398,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Program Files\cilantro\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(399,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Program Files\cilantro\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(400,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Program Files\cilantro\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(409,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(378,72): warning C4018: '<': signed/unsigned mismatch
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(409): message : see reference to function template instantiation 'cilantro::SpectralClustering<float,-1,size_t,size_t>::SpectralClustering<-1,void>(const Eigen::SparseMatrix<float,0,int> &,size_t,bool,const cilantro::GraphLaplacianType &,size_t,ScalarT,bool)' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(409): message : see reference to function template instantiation 'cilantro::SpectralClustering<float,-1,size_t,size_t>::SpectralClustering<-1,void>(const Eigen::SparseMatrix<float,0,int> &,size_t,bool,const cilantro::GraphLaplacianType &,size_t,ScalarT,bool)' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(700,1): warning C4267: 'argument': conversion from 'size_t' to 'const StorageIndex', possible loss of data
+          with
+          [
+              StorageIndex=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\vector(682): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const IndexT&,size_t&,ValueT&>(_Alloc &,_Objty *const ,const IndexT &,size_t &,ValueT &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<Eigen::Triplet<float,int>>,
+              _Ty=Eigen::Triplet<float,int>,
+              IndexT=size_t,
+              ValueT=float,
+              _Objty=Eigen::Triplet<float,int>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\vector(687): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const IndexT&,size_t&,ValueT&>(_Alloc &,_Objty *const ,const IndexT &,size_t &,ValueT &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<Eigen::Triplet<float,int>>,
+              _Ty=Eigen::Triplet<float,int>,
+              IndexT=size_t,
+              ValueT=float,
+              _Objty=Eigen::Triplet<float,int>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\vector(700): message : see reference to function template instantiation 'void std::vector<Eigen::Triplet<ValueT,int>,std::allocator<Eigen::Triplet<ValueT,int>>>::_Emplace_back_with_unused_capacity<const IndexT&,size_t&,ValueT&>(const IndexT &,size_t &,ValueT &)' being compiled
+          with
+          [
+              ValueT=float,
+              IndexT=size_t
+          ]
+C:\Program Files\cilantro\include\cilantro\utilities\nearest_neighbor_graph_utilities.hpp(100): message : see reference to function template instantiation 'void std::vector<Eigen::Triplet<ValueT,int>,std::allocator<Eigen::Triplet<ValueT,int>>>::emplace_back<const IndexT&,size_t&,ValueT&>(const IndexT &,size_t &,ValueT &)' being compiled
+          with
+          [
+              ValueT=float,
+              IndexT=size_t
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(406): message : see reference to function template instantiation 'Eigen::SparseMatrix<float,0,int> cilantro::getNNGraphFunctionValueSparseMatrix<std::vector<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>,std::allocator<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>>>,cilantro::RBFKernelWeightEvaluator<float,ValueT,true>,float>(const NeighborhoodSetT &,const PairEvaluatorT &,bool)' being compiled
+          with
+          [
+              ScalarT=float,
+              IndexT=size_t,
+              ValueT=float,
+              NeighborhoodSetT=std::vector<std::vector<cilantro::Neighbor<float,size_t>,std::allocator<cilantro::Neighbor<float,size_t>>>,std::allocator<std::vector<cilantro::Neighbor<float,size_t>,std::allocator<cilantro::Neighbor<float,size_t>>>>>,
+              PairEvaluatorT=cilantro::RBFKernelWeightEvaluator<float,float,true>
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(195,1): warning C4305: 'initializing': truncation from 'double' to 'ScalarT'
+          with
+          [
+              ScalarT=float
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(378): message : see reference to function template instantiation 'void cilantro::computeLaplacianSpectralEmbedding<ScalarT,-1>(const Eigen::SparseMatrix<float,0,int> &,size_t,bool,const cilantro::GraphLaplacianType &,Eigen::Matrix<float,-1,-1,0,-1,-1> &,Eigen::Matrix<float,-1,1,0,-1,1> &)' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(409): message : see reference to function template instantiation 'cilantro::SpectralClustering<float,-1,size_t,size_t>::SpectralClustering<-1,void>(const Eigen::SparseMatrix<float,0,int> &,size_t,bool,const cilantro::GraphLaplacianType &,size_t,ScalarT,bool)' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(409): message : see reference to function template instantiation 'cilantro::SpectralClustering<float,-1,size_t,size_t>::SpectralClustering<-1,void>(const Eigen::SparseMatrix<float,0,int> &,size_t,bool,const cilantro::GraphLaplacianType &,size_t,ScalarT,bool)' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(203,38): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(217,38): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(232,38): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(248,38): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(258,38): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(268,38): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(284,38): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\clustering\mean_shift.hpp(61,2): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\clustering\mean_shift.hpp(123): message : see reference to function template instantiation 'cilantro::MeanShift<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t> &cilantro::MeanShift<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t>::cluster<KernelEvaluatorT>(const cilantro::ConstDataMatrixMap<float,3> &,ScalarT,size_t,ScalarT,ScalarT,const KernelEvaluatorT &)' being compiled
+          with
+          [
+              KernelEvaluatorT=cilantro::UnityWeightEvaluator<float,float>,
+              ScalarT=float
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\mean_shift.hpp(123): message : see reference to function template instantiation 'cilantro::MeanShift<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t> &cilantro::MeanShift<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t>::cluster<KernelEvaluatorT>(const cilantro::ConstDataMatrixMap<float,3> &,ScalarT,size_t,ScalarT,ScalarT,const KernelEvaluatorT &)' being compiled
+          with
+          [
+              KernelEvaluatorT=cilantro::UnityWeightEvaluator<float,float>,
+              ScalarT=float
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(595): message : see reference to function template instantiation 'cilantro::MeanShift<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t> &cilantro::MeanShift<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t>::cluster<cilantro::UnityWeightEvaluator<float,ValueT>>(ScalarT,size_t,ScalarT,ScalarT,const KernelEvaluatorT &)' being compiled
+          with
+          [
+              ValueT=float,
+              ScalarT=float,
+              KernelEvaluatorT=cilantro::UnityWeightEvaluator<float,float>
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(591): message : see reference to function template instantiation 'cilantro::MeanShift<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t> &cilantro::MeanShift<float,3,cilantro::KDTreeDistanceAdaptors::L2,size_t,size_t>::cluster<cilantro::UnityWeightEvaluator<float,ValueT>>(ScalarT,size_t,ScalarT,ScalarT,const KernelEvaluatorT &)' being compiled
+          with
+          [
+              ValueT=float,
+              ScalarT=float,
+              KernelEvaluatorT=cilantro::UnityWeightEvaluator<float,float>
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\mean_shift.hpp(88,2): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(197,30): warning C4244: 'argument': conversion from 'const Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::Index' to 'int', possible loss of data
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(195): message : while compiling class template member function 'void Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::sort_ritzpair(int)'
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(351): message : see reference to function template instantiation 'void Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::sort_ritzpair(int)' being compiled
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymGEigsSolver.h(282): message : see reference to class template instantiation 'Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>' being compiled
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(275): message : see reference to class template instantiation 'Spectra::SymGEigsSolver<ScalarT,4,Spectra::SparseSymMatProd<ScalarT,1,0,int>,cilantro::internal::SpectraDiagonalInverseBop<ScalarT>,1>' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(378): message : see reference to function template instantiation 'void cilantro::computeLaplacianSpectralEmbedding<ScalarT,-1>(const Eigen::SparseMatrix<float,0,int> &,size_t,bool,const cilantro::GraphLaplacianType &,Eigen::Matrix<float,-1,-1,0,-1,-1> &,Eigen::Matrix<float,-1,1,0,-1,1> &)' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(206,30): warning C4244: 'argument': conversion from 'const Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::Index' to 'int', possible loss of data
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(212,30): warning C4244: 'argument': conversion from 'const Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::Index' to 'int', possible loss of data
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(218,30): warning C4244: 'argument': conversion from 'const Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::Index' to 'int', possible loss of data
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(25,27): warning C4244: 'initializing': conversion from 'Eigen::Index' to 'const int', possible loss of data
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(24): message : while compiling class template member function 'cilantro::internal::SpectraDiagonalInverseBop<ScalarT>::SpectraDiagonalInverseBop(const Eigen::SparseMatrix<float,0,int> &)'
+          with
+          [
+              ScalarT=float
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(274): message : see reference to function template instantiation 'cilantro::internal::SpectraDiagonalInverseBop<ScalarT>::SpectraDiagonalInverseBop(const Eigen::SparseMatrix<float,0,int> &)' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(274): message : see reference to class template instantiation 'cilantro::internal::SpectraDiagonalInverseBop<ScalarT>' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(197,30): warning C4244: 'argument': conversion from 'const Spectra::SymEigsBase<Scalar,4,OpType,Spectra::IdentityBOp>::Index' to 'int', possible loss of data
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(195): message : while compiling class template member function 'void Spectra::SymEigsBase<Scalar,4,OpType,Spectra::IdentityBOp>::sort_ritzpair(int)'
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(351): message : see reference to function template instantiation 'void Spectra::SymEigsBase<Scalar,4,OpType,Spectra::IdentityBOp>::sort_ritzpair(int)' being compiled
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsSolver.h(142): message : see reference to class template instantiation 'Spectra::SymEigsBase<Scalar,4,OpType,Spectra::IdentityBOp>' being compiled
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(209): message : see reference to class template instantiation 'Spectra::SymEigsSolver<ScalarT,4,Spectra::SparseSymMatProd<ScalarT,1,0,int>>' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(206,30): warning C4244: 'argument': conversion from 'const Spectra::SymEigsBase<Scalar,4,OpType,Spectra::IdentityBOp>::Index' to 'int', possible loss of data
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(212,30): warning C4244: 'argument': conversion from 'const Spectra::SymEigsBase<Scalar,4,OpType,Spectra::IdentityBOp>::Index' to 'int', possible loss of data
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(218,30): warning C4244: 'argument': conversion from 'const Spectra::SymEigsBase<Scalar,4,OpType,Spectra::IdentityBOp>::Index' to 'int', possible loss of data
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(154,35): warning C4244: 'argument': conversion from 'Eigen::EigenBase<Derived>::Index' to 'int', possible loss of data
+          with
+          [
+              Derived=Eigen::Matrix<float,-1,1,0,-1,1>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(149): message : while compiling class template member function 'void Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::retrieve_ritzpair(void)'
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(338): message : see reference to function template instantiation 'void Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::retrieve_ritzpair(void)' being compiled
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\Arnoldi.h(71,43): warning C4244: 'argument': conversion from 'Spectra::Arnoldi<Scalar,ArnoldiOpType>::Index' to 'unsigned long', possible loss of data
+          with
+          [
+              Scalar=float,
+              ArnoldiOpType=Spectra::ArnoldiOp<float,Spectra::SymGEigsRegInvOp<float,Spectra::SparseSymMatProd<float,1,0,int>,cilantro::internal::SpectraDiagonalInverseBop<float>>,cilantro::internal::SpectraDiagonalInverseBop<float>>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\Arnoldi.h(63): message : while compiling class template member function 'void Spectra::Arnoldi<Scalar,ArnoldiOpType>::expand_basis(Eigen::Map<const Derived,0,Eigen::Stride<0,0>> &,const Spectra::Arnoldi<Scalar,ArnoldiOpType>::Index,Eigen::Matrix<float,-1,1,0,-1,1> &,Scalar &)'
+          with
+          [
+              Scalar=float,
+              ArnoldiOpType=Spectra::ArnoldiOp<float,Spectra::SymGEigsRegInvOp<float,Spectra::SparseSymMatProd<float,1,0,int>,cilantro::internal::SpectraDiagonalInverseBop<float>>,cilantro::internal::SpectraDiagonalInverseBop<float>>,
+              Derived=Eigen::Matrix<float,-1,-1,0,-1,-1>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\Lanczos.h(88): message : see reference to function template instantiation 'void Spectra::Arnoldi<Scalar,ArnoldiOpType>::expand_basis(Eigen::Map<const Derived,0,Eigen::Stride<0,0>> &,const Spectra::Arnoldi<Scalar,ArnoldiOpType>::Index,Eigen::Matrix<float,-1,1,0,-1,1> &,Scalar &)' being compiled
+          with
+          [
+              Scalar=float,
+              ArnoldiOpType=Spectra::ArnoldiOp<float,Spectra::SymGEigsRegInvOp<float,Spectra::SparseSymMatProd<float,1,0,int>,cilantro::internal::SpectraDiagonalInverseBop<float>>,cilantro::internal::SpectraDiagonalInverseBop<float>>,
+              Derived=Eigen::Matrix<float,-1,-1,0,-1,-1>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\Lanczos.h(28): message : see reference to class template instantiation 'Spectra::Arnoldi<Scalar,ArnoldiOpType>' being compiled
+          with
+          [
+              Scalar=float,
+              ArnoldiOpType=Spectra::ArnoldiOp<float,Spectra::SymGEigsRegInvOp<float,Spectra::SparseSymMatProd<float,1,0,int>,cilantro::internal::SpectraDiagonalInverseBop<float>>,cilantro::internal::SpectraDiagonalInverseBop<float>>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(69): message : see reference to class template instantiation 'Spectra::Lanczos<Scalar,Spectra::ArnoldiOp<Scalar,OpType,BOpType>>' being compiled
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SymGEigsRegInvOp<float,Spectra::SparseSymMatProd<float,1,0,int>,cilantro::internal::SpectraDiagonalInverseBop<float>>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\Arnoldi.h(71,43): warning C4244: 'argument': conversion from 'Spectra::Arnoldi<Scalar,ArnoldiOpType>::Index' to 'unsigned long', possible loss of data
+          with
+          [
+              Scalar=float,
+              ArnoldiOpType=Spectra::ArnoldiOp<float,Spectra::SparseSymMatProd<float,1,0,int>,Spectra::IdentityBOp>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\Arnoldi.h(63): message : while compiling class template member function 'void Spectra::Arnoldi<Scalar,ArnoldiOpType>::expand_basis(Eigen::Map<const Derived,0,Eigen::Stride<0,0>> &,const Spectra::Arnoldi<Scalar,ArnoldiOpType>::Index,Eigen::Matrix<float,-1,1,0,-1,1> &,Scalar &)'
+          with
+          [
+              Scalar=float,
+              ArnoldiOpType=Spectra::ArnoldiOp<float,Spectra::SparseSymMatProd<float,1,0,int>,Spectra::IdentityBOp>,
+              Derived=Eigen::Matrix<float,-1,-1,0,-1,-1>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\Lanczos.h(88): message : see reference to function template instantiation 'void Spectra::Arnoldi<Scalar,ArnoldiOpType>::expand_basis(Eigen::Map<const Derived,0,Eigen::Stride<0,0>> &,const Spectra::Arnoldi<Scalar,ArnoldiOpType>::Index,Eigen::Matrix<float,-1,1,0,-1,1> &,Scalar &)' being compiled
+          with
+          [
+              Scalar=float,
+              ArnoldiOpType=Spectra::ArnoldiOp<float,Spectra::SparseSymMatProd<float,1,0,int>,Spectra::IdentityBOp>,
+              Derived=Eigen::Matrix<float,-1,-1,0,-1,-1>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\Lanczos.h(28): message : see reference to class template instantiation 'Spectra::Arnoldi<Scalar,ArnoldiOpType>' being compiled
+          with
+          [
+              Scalar=float,
+              ArnoldiOpType=Spectra::ArnoldiOp<float,Spectra::SparseSymMatProd<float,1,0,int>,Spectra::IdentityBOp>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(69): message : see reference to class template instantiation 'Spectra::Lanczos<Scalar,Spectra::ArnoldiOp<Scalar,OpType,BOpType>>' being compiled
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=Spectra::IdentityBOp
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\UpperHessenbergQR.h(74,46): warning C4244: 'initializing': conversion from 'int' to 'Scalar', possible loss of data
+          with
+          [
+              Scalar=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\UpperHessenbergQR.h(71): message : while compiling class template member function 'void Spectra::UpperHessenbergQR<Scalar>::compute_rotation(const Scalar &,const Scalar &,Scalar &,Scalar &,Scalar &)'
+          with
+          [
+              Scalar=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\UpperHessenbergQR.h(555): message : see reference to function template instantiation 'void Spectra::UpperHessenbergQR<Scalar>::compute_rotation(const Scalar &,const Scalar &,Scalar &,Scalar &,Scalar &)' being compiled
+          with
+          [
+              Scalar=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\UpperHessenbergQR.h(476): message : see reference to class template instantiation 'Spectra::UpperHessenbergQR<Scalar>' being compiled
+          with
+          [
+              Scalar=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(90): message : see reference to class template instantiation 'Spectra::TridiagQR<Scalar>' being compiled
+          with
+          [
+              Scalar=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(86): message : while compiling class template member function 'void Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::restart(Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::Index)'
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\SymEigsBase.h(348): message : see reference to function template instantiation 'void Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::restart(Spectra::SymEigsBase<Scalar,4,Spectra::SymGEigsRegInvOp<Scalar,OpType,BOpType>,BOpType>::Index)' being compiled
+          with
+          [
+              Scalar=float,
+              OpType=Spectra::SparseSymMatProd<float,1,0,int>,
+              BOpType=cilantro::internal::SpectraDiagonalInverseBop<float>
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\UpperHessenbergQR.h(74,28): warning C4244: 'initializing': conversion from 'int' to 'const Scalar', possible loss of data
+          with
+          [
+              Scalar=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\UpperHessenbergQR.h(75,46): warning C4244: 'initializing': conversion from 'int' to 'Scalar', possible loss of data
+          with
+          [
+              Scalar=float
+          ]
+C:\Program Files\cilantro\include\cilantro\3rd_party\Spectra\LinAlg\UpperHessenbergQR.h(75,28): warning C4244: 'initializing': conversion from 'int' to 'const Scalar', possible loss of data
+          with
+          [
+              Scalar=float
+          ]
+C:\Program Files\cilantro\include\cilantro\core\kd_tree.hpp(226,2): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\core\kd_tree.hpp(339): message : see reference to function template instantiation 'const cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT> &cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT>::kNNSearch<CountT>(const cilantro::ConstDataMatrixMap<ScalarT,3> &,CountT,std::vector<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>,std::allocator<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>>> &) const' being compiled
+          with
+          [
+              ScalarT=float,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointIndexT=size_t,
+              CountT=size_t,
+              IndexT=size_t
+          ]
+C:\Program Files\cilantro\include\cilantro\core\kd_tree.hpp(339): message : see reference to function template instantiation 'const cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT> &cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT>::kNNSearch<CountT>(const cilantro::ConstDataMatrixMap<ScalarT,3> &,CountT,std::vector<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>,std::allocator<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>>> &) const' being compiled
+          with
+          [
+              ScalarT=float,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointIndexT=size_t,
+              CountT=size_t,
+              IndexT=size_t
+          ]
+C:\Program Files\cilantro\include\cilantro\core\kd_tree.hpp(393): message : see reference to function template instantiation 'const cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT> &cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT>::search<size_t>(const cilantro::ConstDataMatrixMap<ScalarT,3> &,const cilantro::KNNNeighborhoodSpecification<size_t> &,std::vector<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>,std::allocator<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>>> &) const' being compiled
+          with
+          [
+              ScalarT=float,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointIndexT=size_t,
+              IndexT=size_t
+          ]
+C:\Program Files\cilantro\include\cilantro\core\kd_tree.hpp(393): message : see reference to function template instantiation 'const cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT> &cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT>::search<size_t>(const cilantro::ConstDataMatrixMap<ScalarT,3> &,const cilantro::KNNNeighborhoodSpecification<size_t> &,std::vector<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>,std::allocator<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>>> &) const' being compiled
+          with
+          [
+              ScalarT=float,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointIndexT=size_t,
+              IndexT=size_t
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(405): message : see reference to function template instantiation 'std::vector<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>,std::allocator<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>>> cilantro::KDTree<ScalarT,3,DistAdaptor,IndexT>::search<cilantro::VectorSet3f,cilantro::KNNNeighborhoodSpecification<size_t>>(const PointsT &,const NeighborhoodSpecT &) const' being compiled
+          with
+          [
+              ScalarT=float,
+              IndexT=size_t,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointsT=cilantro::VectorSet3f,
+              NeighborhoodSpecT=cilantro::KNNNeighborhoodSpecification<size_t>
+          ]
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCilantro\baseCilantroCluster.cpp(405): message : see reference to function template instantiation 'std::vector<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>,std::allocator<std::vector<cilantro::Neighbor<ScalarT,IndexT>,std::allocator<cilantro::Neighbor<ScalarT,IndexT>>>>> cilantro::KDTree<ScalarT,3,DistAdaptor,IndexT>::search<cilantro::VectorSet3f,cilantro::KNNNeighborhoodSpecification<size_t>>(const PointsT &,const NeighborhoodSpecT &) const' being compiled
+          with
+          [
+              ScalarT=float,
+              IndexT=size_t,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointsT=cilantro::VectorSet3f,
+              NeighborhoodSpecT=cilantro::KNNNeighborhoodSpecification<size_t>
+          ]
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(61,34): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\cilantro\include\cilantro\clustering\spectral_clustering.hpp(222): message : see reference to function template instantiation 'size_t cilantro::estimateNumberOfClustersEigengap<Eigen::Matrix<float,-1,1,0,-1,1>>(const VectorT &,size_t)' being compiled
+          with
+          [
+              VectorT=Eigen::Matrix<float,-1,1,0,-1,1>
+          ]
+  dllmain.cpp
+     Creating library C:\libs\PInvokeCPPCSHARP\PInvoke\x64\Release\PInvokeCilantro.lib and object C:\libs\PInvokeCPPCSHARP\PInvoke\x64\Release\PInvokeCilantro.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 3344 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  PInvokeCilantro.vcxproj -> C:\libs\PInvokeCPPCSHARP\PInvoke\x64\Release\PInvokeCilantro.dll
