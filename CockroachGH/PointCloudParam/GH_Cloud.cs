@@ -14,7 +14,7 @@ using System.Drawing;
 using GH_IO.Types;
 using Grasshopper;
 
-//https://github.com/CITA-cph/Volvox/blob/master/Volvox_Cloud/GH_Cloud.vb
+
 namespace CockroachGH {
     public class GH_Cloud : GH_GeometricGoo<PointCloud>, IGH_PreviewData, IGH_BakeAwareData {
         private Guid ReferenceGuid;
@@ -58,7 +58,7 @@ namespace CockroachGH {
 
         public override string IsValidWhyNot {
             get {
-                return "I really don't know, sorry.";
+                return "Fail";
             }
         }
 
@@ -327,27 +327,7 @@ namespace CockroachGH {
 
         public override string ToString() {
             return string.Format("PointCloud {0} HasNormals {1} HasColors {2}", this.m_value.Count, this.m_value.ContainsNormals, this.m_value.ContainsColors).ToString();
-            //string str;
-            //if (!this.m_value.UserDictionary.ContainsKey("FilePath")) {
-            //    if (!this.IsReferencedGeometry) {
-            //        if (this.m_value == null) {
-            //            goto Label1;
-            //        }
-            //        str = string.Concat("Point Cloud with ", (this.m_value.Count()), " points").ToString();
-            //        return str;
-            //    } else {
-            //        if (this.m_value == null) {
-            //            goto Label1;
-            //        }
-            //        str = string.Concat("Referenced Point Cloud with ", (this.m_value.Count()), " points").ToString();
-            //        return str;
-            //    }
-            //Label1:
-            //    str = "Null Cloud";
-            //} else {
-            //    str = string.Concat("Cloud will be loaded from: ", "Path");//this.m_value.UserDictionary().GetString("VolvoxFilePath")
-            //}
-            //return str;
+
         }
 
         public override IGH_GeometricGoo Transform(Transform xform) {
@@ -413,16 +393,6 @@ namespace CockroachGH {
             return flag;
         }
 
-        //public bool BakeGeometry(RhinoDoc doc, ObjectAttributes att, ref Guid obj_guid) {
-        //    bool flag;
-        //    if (this.IsValid) {
-        //        obj_guid = doc.Objects.AddPointCloud(this.m_value, att);
-        //        flag = true;
-        //    } else {
-        //        flag = false;
-        //    }
-        //    return flag;
-        //}
 
 
         public class GH_CloudProxy : GH_GooProxy<GH_Cloud> {
