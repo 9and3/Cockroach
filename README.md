@@ -17,8 +17,11 @@ This plug-in is open-source to help researchers working for PointCloud processin
 We want to thank Dale Fugier (McNeel) for his help during C++ plugin development into Rhinoceros®.
 
 [1] Zhou, Park, and Koltun, Open3D: A Modern Library for 3D Data Processing. http://www.open3d.org/
+
 [2] CGAL, Computational Geometry Algorithms Library. https://www.cgal.org 
+
 [3] Zampogiannis, Konstantinos and Fermuller, Cornelia and Aloimonos, Yiannis, Cilantro: A Lean, Versatile, and Efficient Library for Point Cloud Data Processing, Proceedings of the 26th ACM International Conference on Multimedia, 2018. https://github.com/kzampog/cilantro 
+
 [4] https://www.rhino3d.com/ 
 
 **Dependencies**
