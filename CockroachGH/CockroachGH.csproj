@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33E1E51A-F0FE-4FFE-AE23-16FA492F6697}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CockroachGH</RootNamespace>
+    <AssemblyName>CockroachGH</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\..\..\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\Cockroach\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\..\..\..\..\..\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\Cockroach\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GH_IO">
+      <HintPath>..\..\..\..\..\Rhino6Old\GH_IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <HintPath>..\..\..\..\..\Rhino6Old\Grasshopper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PInvokeCSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\Cockroach\PInvokeCSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RhinoCommon">
+      <HintPath>..\..\..\..\..\Rhino6Old\RhinoCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cleaning\CloudPolygonCrop.cs" />
+    <Compile Include="Cleaning\CloudMeshCrop.cs" />
+    <Compile Include="Cleaning\CloudBoxCrop.cs" />
+    <Compile Include="Clipper\clipper.cs" />
+    <Compile Include="Clipper\Clipper642.cs" />
+    <Compile Include="Clipper\DataAccessHelper.cs" />
+    <Compile Include="Clipper\Geometry.cs" />
+    <Compile Include="Cluster\CloudClusterCilantro.cs" />
+    <Compile Include="Cluster\CloudRANSAC.cs" />
+    <Compile Include="Cluster\CloudSOR.cs" />
+    <Compile Include="Mesh\CloudPopulateMesh.cs" />
+    <Compile Include="Mesh\MeshBoolean.cs" />
+    <Compile Include="Mesh\MeshSkeleton.cs" />
+    <Compile Include="PointCloudParam\CloudPreview.cs" />
+    <Compile Include="PointCloudParam\CloudSwap.cs" />
+    <Compile Include="PointCloudParam\CloudMerge.cs" />
+    <Compile Include="Cleaning\CloudSection.cs" />
+    <Compile Include="Cluster\CloudCluster.cs" />
+    <Compile Include="PointCloudParam\CloudCreate.cs" />
+    <Compile Include="Mesh\CloudMesh.cs" />
+    <Compile Include="PointCloudParam\CloudExplode.cs" />
+    <Compile Include="PointCloudParam\GH_CloudConvert.cs" />
+    <Compile Include="PointCloudParam\GH_CloudGetter.cs" />
+    <Compile Include="PointCloudParam\Param_Cloud.cs" />
+    <Compile Include="PointCloudParam\StaticParameters.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Mesh\CloudNormals.cs" />
+    <Compile Include="Sample\CloudDownsampleVoxel.cs" />
+    <Compile Include="Sample\CloudDownsample.cs" />
+    <Compile Include="CockroachGHInfo.cs" />
+    <Compile Include="Mesh\MeshRepair.cs" />
+    <Compile Include="PointCloudParam\GH_Cloud.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToDo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlyReaderWriter\PlyReaderWriter.csproj">
+      <Project>{173cf4f2-b13c-4141-b38d-e1d8ce4b2b29}</Project>
+      <Name>PlyReaderWriter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\BoundingBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\Cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\Cluster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\CreateCloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\Downsample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\ExplodeCloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\MeshRepair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\Normals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\PlaneClip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\Poisson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\Guid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\Merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1x\RANSAC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cluster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateCloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExplodeCloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneClip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poisson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolygonCrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PopulateMesh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RANSAC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SOR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoundingBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeshRepair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeshCrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Swap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeshSkeleton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownsampleVoxel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Downsample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeshBoolean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClusterNormals.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetPath)" "$(TargetDir)$(ProjectName).gha"
+Erase "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <FallbackCulture>en-US</FallbackCulture>
+  </PropertyGroup>
+</Project>
