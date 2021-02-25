@@ -24,11 +24,15 @@ We want to thank Dale Fugier (McNeel) for his help during C++ plugin development
 
 [4] https://www.rhino3d.com/ 
 
+
+
 **Dependencies**
 
 Recent build and example files will be stored in Build directory. The method are run in two ways: a) Rhino plugin command-lines starting as Cockroach_CommandName, b) Grasshopper plugin. You will need to download the necessary dependencies to run the algorithms in Rhinoceros®. The dependencies could be acquired in two ways:
 1.	Download Cockroach from www.food4rhino.com/
 2.	Compile Open3D as a Dynamic Library from: Open3D repository: https://github.com/intel-isl/Open3D/blob/master/README.md. Compile Cilantro https://github.com/kzampog/cilantro and CGAL 5.2 https://github.com/CGAL/cgal/releases/tag/v5.2 .
+
+
 
 **Citation**
 
@@ -41,9 +45,13 @@ Citation (no Bibtex):
 Petras Vestartas and Andrea Settimi, Cockroach: A Plug-in for Point Cloud Post-Processing and Meshing in Rhino Environment, EPFL ENAC ICC IBOIS, 2020, https://github.com/9and3/Cockroach.
 
 
+
+
 **Contact**
 
 For code request or chat, i.e. open GitHub issue or contact us by email. Some data, models or generated code using our research are available from the corresponding authors by request: Petras Vestartas, petrasvestartas@gmail.com Andrea Settimi, andrea.settimi@epfl.ch
+
+
 
 
 **Acknowledgements**
@@ -51,9 +59,13 @@ For code request or chat, i.e. open GitHub issue or contact us by email. Some da
 The laboratory for Timber Construction (IBOIS) at École Polytechnique Fédérale de Lausanne (EPFL) financially supports the authors contribution to the current research and version 1.0.0 development of the .NET PointCloud processing tool.
 
 
+
+
 **License**
 
 Cockroach is released under MIT license complying with regulations of 3rd party library CGAL. For the LGPL license, please refer to License.docx. If you use Cockroach in published work, please also cite the third-party libraries we used: Open3D (MIT license), CGAL (LGPL license), Open3D (MIT License). The code is fully open, complying with CGAL (LGPL license). We encourage use for research purposes, as long as proper attribution is given. Feel free to send us an email and let us know how Cockroach has been useful to you and how it can be improved.
+
+
 
 
 **What to Contribute?**
@@ -64,6 +76,7 @@ b)	Use only .NET C# project – PinvokeCSharp, that wraps C++ libraries. Here yo
 c)	Use CockroachGH project to develop code for Rhino and Grasshopper.
 
 If you have a valid contribution or bug fix, open an issue with the source code to merge it with the current project.
+
 
 
 
