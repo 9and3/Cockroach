@@ -1,9 +1,0 @@
----
-name: Cockroach
-version: 0.0.1
-authors:
-- Petras Vestartas, Andrea Settimi
-description: PointCloud Processing for Rhino 7
-url: https://www.epfl.ch/labs/ibois/
-secret:
-  id: 43BA266A-5E55-4021-B3FB-4E3D5C7B9383
