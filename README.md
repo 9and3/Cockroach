@@ -63,7 +63,7 @@ The laboratory for Timber Construction (IBOIS) at École Polytechnique Fédéral
 
 **License**
 
-Cockroach is released under LGPL license. If you use Cockroach in published work, please also cite the third-party libraries we used: Open3D, CGAL, Open3D. We encourage use for research purposes, as long as proper attribution is given. Feel free to send us an email and let us know how Cockroach has been useful to you and how it can be improved.
+Cockroach is released under LGPL license. If you use Cockroach in published work, please also cite the third-party libraries we used: Open3D, CGAL, Cilantro. We encourage use for research purposes, as long as proper attribution is given. Feel free to send us an email and let us know how Cockroach has been useful to you and how it can be improved.
 
 
 
