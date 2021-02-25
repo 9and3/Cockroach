@@ -4,92 +4,74 @@
 </p>
 
 
-Cockroach is a plug-in developed to introduce various commands for point cloud post-processing and meshing into Rhinoceros® environment based on reference functions already existing in the open source library Open3D [1]. 
+Cockroach is a plugin developed to introduce various commands for point cloud post-processing and meshing into Rhinoceros® [4]   environment based on reference functions already existing in the open-source library Open3D [1], CGAL [2], Cilantro [3].
 
 The pointcloud processing tools focus on:
-1. fast and easy-to-use geometric manipulation, characterization and decomposition of point clouds directly in Rhinoceros6 and 7®. 
-2. the better link between CAD modelling software (Rhino) and point-cloud processing.
-3. integration of point-cloud processing with other frameworks such as easy-to-use .NET programming languages (C#, IronPython, VB) using the interface of Grasshopper, Rhino.
-4. unified (as much as possible) approach across multiple backends to help researchers collaborate within academic or industrial partners. At IBOIS - EPFL, among other research lines, we have also being focusing on structures with unpredictable geometries such as raw wood and mineral scraps. These construction elements are scanned and post-processed into low-poly meshes or NURBS for design i.e. 3D timber joinery representation and fabrication tool-paths for 5-axis CNC, ABBIRB6400 Robot and XR manufacture.
+1.	fast and easy-to-use geometric manipulation, characterization and decomposition of point clouds directly in Rhinoceros6 and 7®.
+2.	improving the  link between CAD modelling software (Rhinoceros®) and point-cloud processing.
+3.	focus on the integration of point-cloud processing with other frameworks such as easy-to-use .NET programming languages (C#, IronPython, VB) using the interface of Grasshopper, Rhinoceros® [4].  
 
-We would like to thank Dale Fugier (McNeel) for his help during C++ plugin development into Rhinoceros®.
-
-[1] Zhou, Park, and Koltun, Open3D: A Modern Library for 3D Data Processing.
-
-**Dependecies**
-
-You will need download the Open3D.dll and place it in the same plug-in folder.
-There are two ways to get Open3D.dll
-
-1. Download Cockroach from www.food4rhino.com/
-2. Compile Open3D as a Dynamic Library from:
-Open3D repository: https://github.com/intel-isl/Open3D/blob/master/README.md
+This plug-in is open-source to help researchers working for PointCloud processing in .NET.  At IBOIS - EPFL, among other research lines, we have also been focusing on structures with unpredictable geometries such as raw wood and mineral scraps. These construction elements are scanned and post-processed into low-poly meshes or NURBS for design, i.e. 3D timber joinery representation and fabrication tool-paths for 5-axis CNC, 6-axis robot and XR manufacture. 
 
 
-**Core Features**
+We want to thank Dale Fugier (McNeel) for his help during C++ plugin development into Rhinoceros®.
 
-The first release includes 13 Rhino commands: 
+[1] Zhou, Park, and Koltun, Open3D: A Modern Library for 3D Data Processing. http://www.open3d.org/
+[2] CGAL, Computational Geometry Algorithms Library. https://www.cgal.org 
+[3] Zampogiannis, Konstantinos and Fermuller, Cornelia and Aloimonos, Yiannis, Cilantro: A Lean, Versatile, and Efficient Library for Point Cloud Data Processing, Proceedings of the 26th ACM International Conference on Multimedia, 2018. https://github.com/kzampog/cilantro 
+[4] https://www.rhino3d.com/ 
 
-*Cockroach_BallPivoting* : a mesh reconstruction algorithm to reconstruct a triangulated mesh from a point cloud;
+**Dependencies**
 
-*Cockroach_Poisson* : a mesh reconstruction algorithm to obtain water-tight smoothed meshes from point clouds;
-
-*Cockroach_Crop* : to crop a point cloud with a box;
-
-*Cockroach_DBSCANclustering* : a density-based clustering method to obtain separate point clouds from a bigger one;
-
-*Cockroach_Downsample* : reduce the size of a point cloud by a number threshold of points;
-
-*Cockroach_VoxelDownsample* : reduce the number of point clouds by voxelization;
-
-*Cockroach_MeshSmooth* : to uniformly smooth a mesh;
-
-*Cockroach_PlaneSegmentation* : removal of point cloud planes by RANSAC;
-
-*Cockroach_PointCloudNormals* : to estimate and correctly orient normal even for unstructured point clouds;
-
-*Cockroach_PopulatePoints* : to obtain a randomly populated point cloud from a mesh;
-
-*Cockroach_PopulatePointsUniform* : to obtain an uniformly populated point cloud from a mesh;
-
-*Cockroach_RadiusOutlierRemoval* : to filter noise (outlier points) from point clouds by distance radius;
-
-*Cockroach_RemoveStatisticalOutliers* : to filter noise (outlier points) from point clouds by KdTree search;
+Recent build and example files will be stored in Build directory. The method are run in two ways: a) Rhino plugin command-lines starting as Cockroach_CommandName, b) Grasshopper plugin. You will need to download the necessary dependencies to run the algorithms in Rhinoceros®. The dependencies could be acquired in two ways:
+1.	Download Cockroach from www.food4rhino.com/
+2.	Compile Open3D as a Dynamic Library from: Open3D repository: https://github.com/intel-isl/Open3D/blob/master/README.md. Compile Cilantro https://github.com/kzampog/cilantro and CGAL 5.2 https://github.com/CGAL/cgal/releases/tag/v5.2 .
 
 **Citation**
 
-Please use this citation if you use Cockroach in published work. In addition, please cite also the third-party libraries we used: Open3D (https://github.com/intel-isl/Open3D/blob/master/README.md).
+Please use this citation if you use Cockroach in published work. Also, please also cite the third-party libraries we used: Open3D  (https://github.com/intel-isl/Open3D/blob/master/README.md) , CGAL (https://doc.cgal.org/latest/Manual/how_to_cite_cgal.html ), Cilantro (https://github.com/kzampog/cilantro/blob/master/README.md ).
 
 Bibitex citation:
+@misc{IBOIS2020, author = {Petras Vestartas and Andrea Settimi}, title = {{Cockroach}: {A} plug-in for point cloud post-processing and meshing in {Rhino} environment}, journal = {EPFL ENAC ICC IBOIS}, url = {https://github.com/9and3/Cockroach}, year = {2020} }
 
-@misc{IBOIS2020,
-   author  = {Petras Vestartas and Andrea Settimi},
-   title   = {{Cockroach}: {A} plug-in for point cloud post-processing and meshing in {Rhino} environment},
-   journal = {EPFL ENAC ICC IBOIS},
-   url = {https://github.com/9and3/Cockroach},
-   year    = {2020}
-}
-
-Citation (no Bibitex):
-
+Citation (no Bibtex):
 Petras Vestartas and Andrea Settimi, Cockroach: A Plug-in for Point Cloud Post-Processing and Meshing in Rhino Environment, EPFL ENAC ICC IBOIS, 2020, https://github.com/9and3/Cockroach.
+
+
+**Contact**
+
+For code request or chat, i.e. open GitHub issue or contact us by email. Some data, models or generated code using our research are available from the corresponding authors by request: Petras Vestartas, petrasvestartas@gmail.com Andrea Settimi, andrea.settimi@epfl.ch
+
+
+**Acknowledgements**
+
+The laboratory for Timber Construction (IBOIS) at École Polytechnique Fédérale de Lausanne (EPFL) financially supports the authors contribution to the current research and version 1.0.0 development of the .NET PointCloud processing tool.
 
 
 **License**
 
-Cockroach is released under the MIT license. If you use Cockroach in published work, please cite also the third-party libraries we used: Open3D.
-The code is not yet fully open as there are still developments in progress but will be soon. Nevertheless, the code can be made available upon request. We encourage use for both research and commercial purposes, as long as proper attribution is given. Feel free to also send us an email and let us know how Cockroach has been useful to you and how it can be improved. 
+Cockroach is released under MIT license complying with regulations of 3rd party library CGAL. For the LGPL license, please refer to License.docx. If you use Cockroach in published work, please also cite the third-party libraries we used: Open3D (MIT license), CGAL (LGPL license), Open3D (MIT License). The code is fully open, complying with CGAL (LGPL license). We encourage use for research purposes, as long as proper attribution is given. Feel free to send us an email and let us know how Cockroach has been useful to you and how it can be improved.
 
-**Contact**
 
-For code request or chat i.e. open github issue or contact us by email.
-Some data, models or generated code using our research are available from the corresponding authors by request:
-Petras Vestartas, petrasvestartas@gmail.com
-Andrea Settimi, andrea.settimi@epfl.ch
+**What to Contribute?**
 
-**Next release**
+There are several ways how to use and contribute to Cockroach library:
+a)	Compile C++ all or one of the 3rd party libraries (Open3D, CGAL, Cilantro) and use the project as it is. The libraries are divided into separate projects. Therefore, you can each project individually or together. The full project is called PInvoke. Individual C++ projects are PInvokeCGAL, PInvokeOpen3D, PInvokeCilantro.
+b)	Use only .NET C# project – PinvokeCSharp, that wraps C++ libraries. Here you can write C# PointCloud processing algorithms too without 3rd party libraries.
+c)	Use CockroachGH project to develop code for Rhino and Grasshopper.
 
-Cockroach is currently a Rhino plug-in. 
-We are planning to make a GH plug-in and release the full source code in a near future.
+If you have a valid contribution or bug fix, open an issue with the source code to merge it with the current project.
+
+
+
+**Installation**
+
+The installation follows standard Rhinoceros and Grasshopper plugin installation process. All the files are placed in the Build directory. Following steps requires:
+1)	Download Build folder
+2)	Place all the files in the Grasshopper libraries folder and unblock all .dll files, .gha, and .rhp if needed.
+3)	For Rhino plugin simply drag and drop .rhp file to Rhino canvas.
+4)	For Grasshopper, you will find the Cockroach tab after you restart Rhino. 
+
+
 
 
