@@ -1,9 +1,0 @@
----
-name: CockroachRhino6
-version: 0.0.1
-authors:
-- Petras Vestartas, Andrea Settimi
-description: PointCloud Processing for Rhino 6
-url: https://www.epfl.ch/labs/ibois/
-secret:
-  id: A56F3E41-9D6E-4B93-BD2F-A843ACD0156E
