@@ -1,0 +1,9 @@
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\bin\x64\PInvokeCSharp.dll
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\obj\x64\Debug\PInvokeCSharp.csproj.CoreCompileInputs.cache
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\obj\x64\Debug\PInvokeCSharp.dll
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\obj\x64\Debug\PInvokeCSharp.pdb
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\bin\x64\PInvokeCSharp.pdb
+C:\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\Cockroach\PInvokeCSharp.dll
+C:\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\Cockroach\PInvokeCSharp.pdb
+C:\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\ngon\PInvokeCSharp.dll
+C:\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\ngon\PInvokeCSharp.pdb

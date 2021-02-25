@@ -1,0 +1,6 @@
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\bin\Debug\PInvokeCSharp.dll
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\bin\Debug\PInvokeCSharp.pdb
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\obj\Debug\PInvokeCSharp.csprojAssemblyReference.cache
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\obj\Debug\PInvokeCSharp.csproj.CoreCompileInputs.cache
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\obj\Debug\PInvokeCSharp.dll
+C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\obj\Debug\PInvokeCSharp.pdb
