@@ -90,7 +90,7 @@ The installation follows standard Rhinoceros and Grasshopper plugin installation
 
 CGAL Linking:
  <p align="center">
-  <img width="5500" height="4400" src="https://github.com/9and3/Cockroach/blob/Cockroach/CGAL.png">
+  <img src="https://github.com/9and3/Cockroach/blob/Cockroach/CGAL.png">
 </p>
 
 
