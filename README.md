@@ -88,6 +88,12 @@ The installation follows standard Rhinoceros and Grasshopper plugin installation
 3)	For Rhino plugin simply drag and drop .rhp file to Rhino canvas.
 4)	For Grasshopper, you will find the Cockroach tab after you restart Rhino. 
 
+CGAL Linking:
+ <p align="center">
+  <img width="400" height="410" src="https://github.com/9and3/Cockroach/blob/Cockroach/CGAL.png">
+</p>
+
+
 
 
 
