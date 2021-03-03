@@ -68,7 +68,7 @@ Cockroach is released under LGPL license. If you use Cockroach in published work
 
 
 
-**What to Contribute?**
+**How to Contribute?**
 
 There are several ways how to use and contribute to Cockroach library:
 a)	Compile C++ all or one of the 3rd party libraries (Open3D, CGAL, Cilantro) and use the project as it is. The libraries are divided into separate projects. Therefore, you can each project individually or together. The full project is called PInvoke. Individual C++ projects are PInvokeCGAL, PInvokeOpen3D, PInvokeCilantro.
