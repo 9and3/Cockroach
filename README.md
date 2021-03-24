@@ -99,7 +99,8 @@ CGAL Linking:
   <img src="https://github.com/9and3/Cockroach/blob/Cockroach/CGAL.png">
 </p>
 
-
-
+**Known issues**
+Windows 7 does not find C++ file resulting in HResult error. Install x64 VCRuntime libraries:
+https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0
 
 
