@@ -11,26 +11,22 @@ namespace CockroachGH {
 
         public CloudSection()
   : base("CloudSection", "CloudSection",
-      "CloudSection",
-      "Cockroach", "Crop") {
+         "Intersect a PointCloud with one or multiple Planes using a defined Tolerance, returning the section(s) as a new PointCloud.",
+         "Cockroach", "Crop") {
         }
         public override GH_Exposure Exposure => GH_Exposure.quarternary;
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager) {
-            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "PointCloud", GH_ParamAccess.item);
-            pManager.AddPlaneParameter("Planes", "P", "Planes", GH_ParamAccess.list);
-            pManager.AddNumberParameter("Tolerance", "T", "Searches closest points to planes, if value is negative points are projected", GH_ParamAccess.item, 1);
+            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "The PointCloud to the section(s) for.", GH_ParamAccess.item);
+            pManager.AddPlaneParameter("Planes", "P", "The section Planes", GH_ParamAccess.list);
+            pManager.AddNumberParameter("Tolerance", "T", "Searches closest points to planes, if value is negative points are projected.", GH_ParamAccess.item, 1);
         }
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager) {
-
-            //pManager.AddGenericParameter("PointCloud", "C", "PointCloud", GH_ParamAccess.item);
-            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "PointCloud", GH_ParamAccess.item);
-
+            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "The section(s) of the PointCloud", GH_ParamAccess.item);
         }
 
         protected override void SolveInstance(IGH_DataAccess DA) {
-
             // Input
             var cgh = new GH_Cloud();
             DA.GetData(0, ref cgh);
@@ -43,16 +39,12 @@ namespace CockroachGH {
 
 
             DA.SetData(0, new GH_Cloud(SectionCloud(cgh.Value,planes,Math.Abs(distance), distance < 0)));
-
-
         }
 
         public PointCloud SectionCloud(PointCloud cloud, List<Plane> planes,  double tol = 0.001, bool project = false) {
 
             bool[] flags = new bool[cloud.Count];
             int[] cID = new int[cloud.Count];
-
-          
 
             int count = 1;
             foreach (Plane plane in planes) {
@@ -61,17 +53,15 @@ namespace CockroachGH {
                    double denom = 1 / Math.Sqrt(eq[0] * eq[0] + eq[1] * eq[1] + eq[2] * eq[2]);
 
 
-                System.Threading.Tasks.Parallel.For(0, cloud.Count, i => {
-                    // for (int i = 0; i < cloud_.Count; i++) {
-
+                System.Threading.Tasks.Parallel.For(0, cloud.Count, i =>
+                {
                     if (flags[i]) return;
 
-                    if (Math.Abs(FastPlaneToPt(denom, eq[0], eq[1], eq[2], eq[3], cloud[i].Location)) <= tol) {
+                    if (Math.Abs(FastPlaneToPt(denom, eq[0], eq[1], eq[2], eq[3], cloud[i].Location)) <= tol)
+                    {
                         flags[i] = true;
                         cID[i] = count;
                     }
-
-
                 });
 
                 count++;
@@ -79,9 +69,11 @@ namespace CockroachGH {
 
             int cc = 0;
             List<int> idList = new List<int>();
-            for (int i = 0; i < cloud.Count; i++) {
+            for (int i = 0; i < cloud.Count; i++)
+            {
                 //bool f = inverse ? !flags[i] : flags[i];
-                if (flags[i]) {
+                if (flags[i])
+                {
                     idList.Add(i);
                     cc++;
                 }
@@ -91,20 +83,27 @@ namespace CockroachGH {
             Point3d[] points = new Point3d[cc];
             Vector3d[] normals = new Vector3d[cc];
             Color[] colors = new Color[cc];
+            double[] pvalues = new double[count];
 
-            System.Threading.Tasks.Parallel.For(0, idArray.Length, i => {
-
-
+            System.Threading.Tasks.Parallel.For(0, idArray.Length, i =>
+            {
                 int id = idArray[i];
                 var p = cloud[(int)id];
                 points[i] = p.Location;
                 normals[i] = p.Normal;
                 colors[i] = p.Color;
-
+                pvalues[i] = p.PointValue;
             });
 
             PointCloud croppedCloud = new PointCloud();
-            croppedCloud.AddRange(points, normals, colors);
+            if (cloud.ContainsPointValues)
+            {
+                croppedCloud.AddRange(points, normals, colors, pvalues);
+            }
+            else
+            {
+                croppedCloud.AddRange(points, normals, colors);
+            }
 
             //PointCloud croppedCloud = new PointCloud();
             //for (int i = 0; i < cloud.Count; i++) {
