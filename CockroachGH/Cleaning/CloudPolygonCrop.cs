@@ -12,21 +12,21 @@ namespace CockroachGH {
 
         public CloudPolygonCrop()
   : base("CloudPolygonCrop", "CloudPolygonCrop",
-      "CloudPolygonCrop",
-      "Cockroach", "Crop") {
+         "Crop a PointCloud with one or multiple closed Polylines, returning either the inside or the outside of the Polyline(s) as a new PointCloud.",
+         "Cockroach", "Crop") {
         }
         public override GH_Exposure Exposure => GH_Exposure.quarternary;
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager) {
-            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "PointCloud", GH_ParamAccess.item);
-            pManager.AddCurveParameter("Polylines", "P", "Closed Polylines",GH_ParamAccess.list);
-            pManager.AddBooleanParameter("Inverse","I","Get Outside part of box", GH_ParamAccess.item, false);
+            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "The PointCloud to crop.", GH_ParamAccess.item);
+            pManager.AddCurveParameter("Polylines", "P", "Closed Polylines to crop the PointCloud with.",GH_ParamAccess.list);
+            pManager.AddBooleanParameter("Inverse","I", "If set to True, will get the outside part of the Polygon(s).", GH_ParamAccess.item, false);
             pManager[2].Optional = true;
           }
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager) {
 
-            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "PointCloud", GH_ParamAccess.item);
+            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "The cropped PointCloud.", GH_ParamAccess.item);
 
         }
 
@@ -72,55 +72,60 @@ namespace CockroachGH {
                 cloud_.Transform(xform);
                 var input = Geometry.RhinClip.PolylineToIntPoint(polyline, scale);
 
-                System.Threading.Tasks.Parallel.For(0, cloud.Count, i => {
-                    // for (int i = 0; i < cloud_.Count; i++) {
-
+                System.Threading.Tasks.Parallel.For(0, cloud.Count, i =>
+                {
                     if (flags[i]) return;
 
                     Point3d p = new Point3d(cloud_[i].Location);
                     var inputP = new IntPoint(p.X * scale, p.Y * scale);
 
                     bool flag = Clipper642.Clipper.PointInPolygon(inputP, input) != 0;//;: Clipper642.Clipper.PointInPolygon(inputP, input) == 0;
-                    if (flag)
-                        flags[i] = true;
-                    // }
+                    if (flag) flags[i] = true;
                 });
 
 
 
             }
 
-
             int count = 0;
             List<int> idList = new List<int>();
             //System.Threading.Tasks.Parallel.For(0, cloud.Count, i => {
-                for (int i = 0; i < cloud.Count; i++) {
-                    bool f = inverse ? !flags[i] : flags[i];
-                    if (f) {
-                        idList.Add(i);
-                        count++;
-                    }
+            for (int i = 0; i < cloud.Count; i++)
+            {
+                bool f = inverse ? !flags[i] : flags[i];
+                if (f)
+                {
+                    idList.Add(i);
+                    count++;
                 }
+            }
             //});
 
             int[] idArray = idList.ToArray();
             Point3d[] points = new Point3d[count];
             Vector3d[] normals = new Vector3d[count];
             Color[] colors = new Color[count];
+            double[] pvalues = new double[count];
 
-            System.Threading.Tasks.Parallel.For(0, idArray.Length, i => {
-
-
+            System.Threading.Tasks.Parallel.For(0, idArray.Length, i =>
+            {
                 int id = idArray[i];
                 var p = cloud[(int)id];
                 points[i] = p.Location;
                 normals[i] = p.Normal;
                 colors[i] = p.Color;
-
+                pvalues[i] = p.PointValue;
             });
 
             PointCloud croppedCloud = new PointCloud();
-            croppedCloud.AddRange(points, normals, colors);
+            if (cloud.ContainsPointValues)
+            {
+                croppedCloud.AddRange(points, normals, colors, pvalues);
+            }
+            else
+            {
+                croppedCloud.AddRange(points, normals, colors);
+            }
 
             //PointCloud croppedCloud = new PointCloud();
             //for (int i = 0; i < cloud.Count; i++) {
@@ -133,8 +138,8 @@ namespace CockroachGH {
             //        }
             //    }
             //}
-            return croppedCloud;
 
+            return croppedCloud;
         }
 
  
