@@ -11,20 +11,20 @@ namespace CockroachGH {
 
         public CloudBoxCrop()
   : base("CloudBoxCrop", "CloudBoxCrop",
-         "Crop a PointCloud with one or many boxes, getting either the inside or the outside of the boxes as a new PointCloud.",
+         "Crop a PointCloud with one or multiple Boxes, returning either the inside or the outside of the Box(es) as a new PointCloud.",
          "Cockroach", "Crop") {
         }
         public override GH_Exposure Exposure => GH_Exposure.quarternary;
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager) {
             pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "The PointCloud to crop.", GH_ParamAccess.item);
-            pManager.AddBrepParameter("Boxes", "B", "The boxes to crop PointCloud with.",GH_ParamAccess.list);
-            pManager.AddBooleanParameter("Inverse","I","If set to True, will get the outside part of the box.", GH_ParamAccess.item, false);
+            pManager.AddBrepParameter("Boxes", "B", "The Box(es) to crop PointCloud with.",GH_ParamAccess.list);
+            pManager.AddBooleanParameter("Inverse","I","If set to True, will get the outside part of the Box.", GH_ParamAccess.item, false);
             pManager[2].Optional = true;
           }
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager) {
-            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "PointCloud", GH_ParamAccess.item);
+            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "The cropped PointCloud.", GH_ParamAccess.item);
         }
 
         protected override void SolveInstance(IGH_DataAccess DA) {
