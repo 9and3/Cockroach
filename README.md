@@ -12,6 +12,8 @@ Cockroach is a plugin developed to introduce various commands for point cloud po
 
 Authors: Petras Vestartas, Andrea Settimi.
 
+Supervision and founding: Julien Gamerro.
+
 The pointcloud processing tools focus on:
 1.	fast and easy-to-use geometric manipulation, characterization and decomposition of point clouds directly in Rhinoceros6 and 7®.
 2.	improving the  link between CAD modelling software (Rhinoceros®) and point-cloud processing.
