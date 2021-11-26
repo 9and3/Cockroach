@@ -47,10 +47,19 @@ Recent build and example files will be stored in Build directory. The method are
 Please use this citation if you use Cockroach in published work. Also, please also cite the third-party libraries we used: Open3D  (https://github.com/intel-isl/Open3D/blob/master/README.md) , CGAL (https://doc.cgal.org/latest/Manual/how_to_cite_cgal.html ), Cilantro (https://github.com/kzampog/cilantro/blob/master/README.md ).
 
 Bibitex citation:
-@misc{IBOIS2020, author = {Petras Vestartas and Andrea Settimi}, title = {{Cockroach}: {A} plug-in for point cloud post-processing and meshing in {Rhino} environment}, journal = {EPFL ENAC ICC IBOIS}, url = {https://github.com/9and3/Cockroach}, year = {2020} }
+```
+@misc{IBOIS2020, 
+author = {Petras Vestartas and Andrea Settimi}, 
+title = {{Cockroach}: {A} plug-in for point cloud post-processing and meshing in {Rhino} environment}, 
+journal = {EPFL ENAC ICC IBOIS}, 
+url = {https://github.com/9and3/Cockroach}, 
+year = {2020} }
+```
 
 Citation (no Bibtex):
+```
 Petras Vestartas and Andrea Settimi, Cockroach: A Plug-in for Point Cloud Post-Processing and Meshing in Rhino Environment, EPFL ENAC ICC IBOIS, 2020, https://github.com/9and3/Cockroach.
+```
 
 
 
