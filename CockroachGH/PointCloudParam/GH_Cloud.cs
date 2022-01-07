@@ -37,16 +37,9 @@ namespace CockroachGH {
             }
         }
 
-
-
- 
-
-
-
         public override bool IsGeometryLoaded {
             get { return base.m_value != null; }
         }
-
 
         public override bool IsValid {
             get {
@@ -97,7 +90,6 @@ namespace CockroachGH {
             this.ReferenceGuid = Guid.Empty;
             this.ScanPos = Plane.WorldXY;
         }
-
         public GH_Cloud(GH_Cloud other) {
             this.ScanPos = Plane.WorldXY;
             this.ReferenceGuid = Guid.Empty;
@@ -326,8 +318,7 @@ namespace CockroachGH {
         }
 
         public override string ToString() {
-            return string.Format("PointCloud {0} HasNormals {1} HasColors {2}", this.m_value.Count, this.m_value.ContainsNormals, this.m_value.ContainsColors).ToString();
-
+            return string.Format("PointCloud {0} HasNormals {1} HasColors {2} HasPointValues {3}", this.m_value.Count, this.m_value.ContainsNormals, this.m_value.ContainsColors, this.m_value.ContainsPointValues).ToString();
         }
 
         public override IGH_GeometricGoo Transform(Transform xform) {

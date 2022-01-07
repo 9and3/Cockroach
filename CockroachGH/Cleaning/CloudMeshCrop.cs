@@ -11,22 +11,20 @@ namespace CockroachGH {
 
         public CloudMeshCrop()
   : base("CloudMeshCrop", "CloudMeshCrop",
-      "CloudMeshCrop",
-      "Cockroach", "Crop") {
+         "Crop a PointCloud with one or multiple Meshes, returning either the inside or the outside of the Mesh(es) as a new PointCloud.",
+         "Cockroach", "Crop") {
         }
         public override GH_Exposure Exposure => GH_Exposure.quarternary;
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager) {
-            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "PointCloud", GH_ParamAccess.item);
-            pManager.AddMeshParameter("Meshes", "M", "Meshes", GH_ParamAccess.list);
-            pManager.AddBooleanParameter("Inverse","I","Get Outside part of box", GH_ParamAccess.item, false);
+            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "The PointCloud to crop.", GH_ParamAccess.item);
+            pManager.AddMeshParameter("Meshes", "M", "The Mesh(es) to crop the PointCloud with.", GH_ParamAccess.list);
+            pManager.AddBooleanParameter("Inverse","I", "If set to True, will get the outside part of the Mesh.", GH_ParamAccess.item, false);
             pManager[2].Optional = true;
           }
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager) {
-
-            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "PointCloud", GH_ParamAccess.item);
-
+            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "The cropped PointCloud.", GH_ParamAccess.item);
         }
 
         protected override void SolveInstance(IGH_DataAccess DA) {
@@ -41,19 +39,15 @@ namespace CockroachGH {
            bool inverse = false;
             DA.GetData(2, ref inverse);
 
-
             PointCloud c = CropCloud(cgh.Value, meshes,inverse);
 
             DA.SetData(0, new GH_Cloud(c));
-
-
         }
 
 
         public PointCloud CropCloud(PointCloud cloud, List<Mesh> M, bool inverse = false) {
 
             RTree rTree = Rhino.Geometry.RTree.CreatePointCloudTree(cloud);
-
             
             bool[] flags = new bool[cloud.Count];
 
@@ -64,9 +58,10 @@ namespace CockroachGH {
                 var boxSearchData = new BoxSearchData();
                 rTree.Search(bBox, BoundingBoxCallback, boxSearchData);
 
-                foreach (int id in boxSearchData.Ids) {
-              
-                    if (m.IsPointInside(cloud[id].Location, 0, true)) {
+                foreach (int id in boxSearchData.Ids)
+                {
+                    if (m.IsPointInside(cloud[id].Location, 0, true))
+                    {
                         flags[id] = true;
                     }
                 }
@@ -75,9 +70,11 @@ namespace CockroachGH {
 
             int count = 0;
             List<int> idList = new List<int>();
-            for (int i = 0; i < cloud.Count; i++) {
+            for (int i = 0; i < cloud.Count; i++)
+            {
                 bool f = inverse ? !flags[i] : flags[i];
-                if (f) {
+                if (f)
+                {
                     idList.Add(i);
                     count++;
                 }
@@ -87,21 +84,27 @@ namespace CockroachGH {
             Point3d[] points = new Point3d[count];
             Vector3d[] normals = new Vector3d[count];
             Color[] colors = new Color[count];
+            double[] pvalues = new double[count];
 
-            System.Threading.Tasks.Parallel.For(0, idArray.Length, i => {
-
-
+            System.Threading.Tasks.Parallel.For(0, idArray.Length, i =>
+            {
                 int id = idArray[i];
                 var p = cloud[(int)id];
                 points[i] = p.Location;
                 normals[i] = p.Normal;
                 colors[i] = p.Color;
-
+                pvalues[i] = p.PointValue;
             });
 
             PointCloud croppedCloud = new PointCloud();
-            croppedCloud.AddRange(points, normals, colors);
-
+            if (cloud.ContainsPointValues)
+            {
+                croppedCloud.AddRange(points, normals, colors, pvalues);
+            }
+            else
+            {
+                croppedCloud.AddRange(points, normals, colors);
+            }
 
             //for (int i = 0; i < f.Length; i++) {
             //    bool flag = inverse ? !f[i] : f[i];
@@ -131,13 +134,6 @@ namespace CockroachGH {
 
             public List<int> Ids { get; set; }
         }
-
-
-
-
-
-
-
 
         public override Guid ComponentGuid {
             get { return new Guid("98aaf1ed-7834-41c8-8fd6-edf88cd44ba1"); }
